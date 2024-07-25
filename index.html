@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="estilo1.css">
+    <title>Mecanica tecnicas especialistas</title>
+    <style>
+        body {
+            font-family: 'Verdana', sans-serif;
+            background-color: #3a3d47;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0; /* Eliminar el margen predeterminado del body */
+        }
+        table {
+            border-collapse: collapse;
+            width: 100%; /* Ancho de la tabla al 100% del contenedor */
+            height: 100%; /* Altura de la tabla al 100% del contenedor */
+        }
+        td {
+            border: 1px solid #000;
+            padding: 10px;
+            text-align: center;
+        }
+        .logo {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+        .logo img {
+            height: 50px; /* Ajusta el tamaño del logo según sea necesario */
+        }
+        .buttons {
+            display: flex;
+            gap: 10px; /* Espacio entre botones */
+        }
+        .buttons a {
+            display: inline-block;
+            width: 100px; /* Ancho del botón */
+            height: 30px; /* Altura del botón */
+            line-height: 30px; /* Alineación vertical del texto */
+            text-align: center;
+            background-color: #1551a1; /* Color de fondo del botón */
+            color: white;
+            text-decoration: none;
+            border-radius: 5px; /* Bordes redondeados */
+        }
+        .buttons a.acc-button {
+            width: 100px; /* Ancho ajustado */
+            height: 30px; /* Altura estándar */
+            line-height: 30px; /* Alineación vertical del texto */
+            padding: 0; /* Eliminar el espacio interior */
+            text-align: center;
+            background-color: #1551a1; /* Color de fondo del botón */
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+        }
+        .inner-table {
+            border: 1px solid #000;
+            border-collapse: collapse;
+            margin: 0 auto;
+        }
+        .inner-table td {
+            border: 1px solid #000;
+            padding: 5px;
+        }
+        .social-icons {
+            display: flex;
+            flex-direction: row; /* Alinea los íconos horizontalmente */
+            align-items: center;
+            gap: 10px; /* Espacio entre los íconos */
+            margin-top: 10px;
+            color: white; /* Color del texto */
+        }
+        .social-icons span {
+            color: white; /* Color del texto "Síguenos en:" */
+            margin-right: 10px; /* Espacio entre el texto y los íconos */
+        }
+        .social-icons img {
+            width: 40px; /* Ancho de las imágenes */
+            height: 40px; /* Altura de las imágenes */
+        }
+        .full-width-img img {
+            width: 100%; /* Imagen llena todo el ancho de la celda */
+            height: auto; /* Mantiene la proporción de la imagen */
+        }
+        .welcome-text {
+            font-weight: bold;
+            color: #ff7600;
+            font-size: 20px;
+        }
+        .highlight {
+            background-color: #1551a1; /* Fondo de color morado */
+            color: white; /* Color del texto en el fondo morado */
+            padding: 3px 0; /* Añadir un poco de espacio alrededor del texto */
+            border-radius: 3px; /* Bordes redondeados */
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 100%; /* Ancho del highlight */
+            height: 40px; /* Altura específica del highlight */
+            line-height: 40px; /* Alineación vertical del texto */
+        }
+        .regresar-button {
+            display: inline-block;
+            margin: 20px auto;
+            padding: 10px 20px;
+            background-color: #1551a1;
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <table>
+        <tr>
+            <td class="logo" colspan="3" bgcolor="#1551a1">
+                <img src="logo/logo1.png" alt="Logo">
+                <div class="buttons">
+                    <a href="#">Inicio</a>
+                    <a href="#">Nosotros</a>
+                    <a href="#">Servicios</a>
+                    <a href="#">Noticias</a>
+                    <a href="#">Contacto</a>
+                </div>
+            </td>
+        </tr>
+        <tr>
+            <td colspan="3" bgcolor="white">
+                <img src="imagenes A/imagen1.jpg" alt="Imagen 1" style="width: 100%; height: auto;">
+                <p class="welcome-text">Bienvenidos a tu mecánica de confianza</p>
+            </td>
+        </tr>
+        <tr>
+            <td colspan="3" bgcolor="white">
+                <table class="inner-table">
+                    <tr>
+                        <td style="vertical-align: top; padding: 10px;">
+                            <img src="imagenes A/servicio1.jpg" alt="Servicio 1">
+                            <p><span class="highlight">SERVICIO 01</span></p>
+                            <p>Ofrecemos un servicio completo de mantenimiento  
+                                preventivo para asegurar que tu vehículo funcione   
+                                de manera óptima y prolongar su vida útil. Nuestros    
+                                técnicos especializados realizan inspecciones 
+                                detalladas y reemplazan componentes esenciales   
+                                como aceite, filtros y líquidos.
+                            </p>
+                            <a href="#" class="acc-button">Acceder</a>
+                        </td>
+                        <td style="vertical-align: top; padding: 10px;">
+                            <img src="imagenes A/servicio2.jpg" alt="Servicio 2">
+                            <p><span class="highlight">SERVICIO 02</span></p>
+                            <p>
+                                Nuestro equipo de expertos está capacitado para 
+                                diagnosticar y reparar cualquier problema relacionado  
+                                con el motor de tu vehículo. 
+                                Utilizamos herramientas y tecnología de punta para 
+                                identificar fallas y realizar reparaciones precisas,   
+                                para la reparación de componentes internos.
+                            </p>
+                            <a href="#" class="acc-button">Acceder</a>
+                        </td>
+                        <td style="vertical-align: top; padding: 10px;">
+                            <img src="imagenes A/servicio3.jpg" alt="Servicio 3">
+                            <p><span class="highlight">SERVICIO 03</span></p>
+                            <p> Contamos con equipos avanzados de diagnóstico para
+                                detectar y solucionar problemas en el sistema eléctrico 
+                                de tu vehículo. Nuestros servicios incluyen la reparación   
+                                de sistemas de iluminación, baterías, alternadores, y 
+                                sistemas de arranque, así como la solución de fallos.
+                            </p>
+                            <a href="#" class="acc-button">Acceder</a>
+                        </td>
+                    </tr>
+                </table>
+            </td>
+        </tr>
+        <tr>
+            <td colspan="3" bgcolor="#062834">
+                <footer>
+                    <div class="logo">
+                        <img src="logo/logo1.png" alt="Logo">
+                        <div class="social-icons">
+                            <span>Síguenos en:</span>
+                            <img src="icons/instagram.png" alt="Instagram">
+                            <img src="icons/youtube.png" alt="YouTube">
+                            <img src="icons/twitter.png" alt="Twitter">
+                            <img src="icons/behance.png" alt="Behance">
+                        </div>
+                    </div>
+                </footer>
+            </td>
+        </tr>
+        <tr>
+            <td colspan="3">
+                <a href="https://saraikoyoc.github.io/menu/" class="regresar-button">Regresar</a>
+            </td>
+        </tr>
+    </table>
+</body>
+</html>
